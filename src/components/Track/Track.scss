@@ -1,0 +1,144 @@
+:root {
+  --slider-color: #fff; // changes according to hover
+}
+
+.track,
+.track-left,
+.track-player,
+.track-right,
+.controls,
+.progress-bar,
+.song-slider,
+.volume {
+  display: flex;
+  align-items: center;
+}
+
+.track {
+  position: sticky;
+  bottom: 0;
+  justify-content: space-between;
+
+  padding: 0 16px;
+  height: 90px;
+  width: calc(100% - 32px);
+  background-color: #181818;
+
+  .icon {
+    height: 20px;
+    ion-icon {
+      font-size: 20px;
+    }
+  }
+
+  .track-left {
+    img {
+      height: 56px;
+      width: 56px;
+    }
+    .song {
+      margin-left: 20px;
+      margin-right: 36px;
+      .song-artist {
+        margin-top: 6px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .track-player {
+    flex-direction: column;
+    row-gap: 5px;
+
+    .controls {
+      height: 42px;
+      column-gap: 32px;
+
+      .icon {
+        height: 24px;
+        ion-icon {
+          font-size: 24px;
+        }
+        &.play-btn {
+          width: 42px;
+          height: 42px;
+          ion-icon {
+            font-size: 40px;
+          }
+          &:hover {
+            ion-icon {
+              font-size: 42px;
+            }
+          }
+        }
+      }
+    }
+
+    .progress-bar {
+      column-gap: 12px;
+      .song-slider {
+        width: 500px;
+      }
+      p {
+        height: 12px;
+      }
+    }
+  }
+
+  .track-right {
+    column-gap: 18px;
+  }
+
+  /* Sliders: Song bar + Volume bar */
+  .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background: #fff; // inserted using JS: linear-gradient(to right, #fff 0%, #fff ${percentage}%, #ffffff66 ${percentage}%, #ffffff66 100%)
+    cursor: pointer;
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #fff;
+      display: none;
+    }
+    &::-moz-range-thumb {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #fff;
+      display: none;
+    }
+
+    &:hover {
+      --slider-color: #57b65f;
+
+      &::-webkit-slider-thumb {
+        display: block;
+      }
+      &::-moz-range-thumb {
+        display: block;
+      }
+    }
+  }
+
+  /* Icon Hover */
+  .icon {
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+    }
+    &.active {
+      opacity: 1;
+      color: #57b65f;
+    }
+  }
+}
