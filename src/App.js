@@ -1,10 +1,15 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (
     <div className="app">
-      <h1 className="title">Spotify Clone</h1>
+      <div className="main">
+        <Sidebar />
+        <div className="container"></div>
+      </div>
+      <div className="track"></div>
     </div>
   );
 }

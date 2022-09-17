@@ -1,0 +1,96 @@
+.sidebar {
+  padding: 30px 0 0 24px;
+  height: calc(100vh - 90px);
+  width: 254px;
+  background-color: #000;
+  position: relative;
+
+  .logo {
+    img {
+      height: 36px;
+    }
+  }
+
+  .nav {
+    margin: 0 24px 2px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .playlists {
+    padding-top: 8px;
+    height: 296px; // Not responsive
+    overflow: hidden;
+    overflow-y: scroll;
+
+    li {
+      padding: 8px 0;
+
+      font-size: 14px;
+      font-weight: 400;
+
+      opacity: 0.65;
+      transition: opacity 1s;
+      &:hover {
+        opacity: 1;
+      }
+      cursor: default;
+    }
+  }
+
+  .nav-item {
+    // used inside .nav and .install
+    padding: 8px 0;
+
+    a {
+      display: flex;
+      align-items: center;
+      column-gap: 18px;
+
+      font-size: 14px;
+      font-weight: 700;
+
+      .icon {
+        width: 24px;
+        height: 24px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ion-icon {
+          font-size: 24px;
+          color: #fff;
+        }
+
+        &.custom-icon {
+          // 'Create Playlist' and 'Liked Songs'
+          border-radius: 2px;
+          background-color: rgba(255, 255, 255);
+          ion-icon {
+            font-size: 16px;
+            color: #000;
+          }
+
+          &.heart {
+            background: linear-gradient(135deg, #6d28d9, #93c5fd);
+            ion-icon {
+              font-size: 14px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    opacity: 0.65;
+    transition: opacity 1s;
+    &:hover {
+      opacity: 1;
+    }
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}
