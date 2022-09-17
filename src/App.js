@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import Sidebar from "./components/Sidebar/Sidebar";
+import Home from "./components/Home/Home";
 import Track from "./components/Track/Track";
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <div className="app">
       <div className="main">
         <Sidebar />
-        <div className="container"></div>
+        <Home />
       </div>
       <Track />
     </div>
