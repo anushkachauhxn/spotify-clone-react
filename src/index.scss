@@ -1,48 +1,48 @@
 @font-face {
   font-family: "Spotify Circular";
-  src: url("/src/assets/fonts/CircularSpotifyText-Light.otf");
+  src: url("./assets/fonts/CircularSpotifyText-Light.otf");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Spotify Circular";
-  src: url("/src/assets/fonts/CircularSpotifyText-Book.otf");
+  src: url("./assets/fonts/CircularSpotifyText-Book.otf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Spotify Circular";
-  src: url("/src/assets/fonts/CircularSpotifyText-BookItalic.otf");
+  src: url("./assets/fonts/CircularSpotifyText-BookItalic.otf");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Spotify Circular";
-  src: url("/src/assets/fonts/CircularSpotifyText-Medium.otf");
+  src: url("./assets/fonts/CircularSpotifyText-Medium.otf");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Spotify Circular";
-  src: url("/src/assets/fonts/CircularSpotifyText-MediumItalic.otf");
+  src: url("./assets/fonts/CircularSpotifyText-MediumItalic.otf");
   font-weight: 500;
   font-style: italic;
 }
 @font-face {
   font-family: "Spotify Circular";
-  src: url("/src/assets/fonts/CircularSpotifyText-Bold.otf");
+  src: url("./assets/fonts/CircularSpotifyText-Bold.otf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Spotify Circular";
-  src: url("/src/assets/fonts/CircularSpotifyText-Black.otf");
+  src: url("./assets/fonts/CircularSpotifyText-Black.otf");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Spotify Circular";
-  src: url("/src/assets/fonts/CircularSpotifyText-BlackItalic.otf");
+  src: url("./assets/fonts/CircularSpotifyText-BlackItalic.otf");
   font-weight: 900;
   font-style: italic;
 }
@@ -71,6 +71,9 @@ button {
   outline: none;
   cursor: pointer;
 }
+ul {
+  list-style: none;
+}
 
 /* Text Styles */
 .title {
@@ -93,4 +96,21 @@ p {
   font-size: 14px;
   font-weight: 400;
   color: #b3b3b3;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgba(255, 255, 255, 0.75);
 }
