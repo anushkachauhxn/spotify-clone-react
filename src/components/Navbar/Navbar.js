@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.scss";
 
-function Navbar({ playlist }) {
+function Navbar({ home }) {
   return (
     <div className="navbar">
       <div className="navbar-left">
@@ -11,12 +11,12 @@ function Navbar({ playlist }) {
         <button className="nav-btns" disabled>
           <ion-icon name="chevron-forward-circle"></ion-icon>
         </button>
-        {playlist && (
+        {!home && (
           <button className="play-btn">
             <ion-icon name="play-circle"></ion-icon>
           </button>
         )}
-        {playlist && <h2>Liked Songs</h2>}
+        {!home && <h2>Liked Songs</h2>}
       </div>
 
       <div className="navbar-right">

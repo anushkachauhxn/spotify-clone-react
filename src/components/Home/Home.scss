@@ -1,4 +1,32 @@
 .home {
   width: 100%;
+  height: 200vh;
   background-color: #121212;
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .home-container {
+    padding: 18px 32px;
+
+    section {
+      padding-bottom: 36px;
+      .heading {
+        padding-bottom: 14px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .section-1 {
+      .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 16px 24px;
+      }
+    }
+  }
 }

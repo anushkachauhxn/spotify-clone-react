@@ -1,0 +1,58 @@
+.rect-card {
+  height: 78px;
+  display: flex;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: background-color 1s;
+  cursor: pointer;
+  overflow: hidden;
+
+  .rect-card-left {
+    img {
+      height: 78px;
+      width: 78px;
+    }
+  }
+
+  .rect-card-right {
+    padding: 0 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .play-btn {
+      width: 54px;
+      opacity: 0;
+      transition: opacity 0.25s;
+      ion-icon {
+        font-size: 52px;
+        color: #57b65f;
+      }
+      ::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background: #000;
+        z-index: -1;
+      }
+      &:hover {
+        ion-icon {
+          font-size: 54px;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    .rect-card-right {
+      .play-btn {
+        opacity: 1;
+      }
+    }
+  }
+}
