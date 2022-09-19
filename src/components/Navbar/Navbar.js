@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
+import { user } from "../../database/data";
 
 function Navbar({ home }) {
   return (
@@ -30,11 +31,8 @@ function Navbar({ home }) {
             }}
             className="menu-btn"
           >
-            <img
-              src="https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1153&q=80"
-              alt=""
-            />
-            <h4>Matilda_</h4>
+            <img src={user.pfp} alt="" />
+            <h4>{user.username}</h4>
             <ion-icon name="caret-down"></ion-icon>
           </button>
 
