@@ -3,7 +3,10 @@
   height: calc(100vh - 90px);
   overflow: hidden;
   overflow-y: scroll;
-  background-color: #121212;
+
+  .home-inside {
+    background: linear-gradient(#1d0d46, #121212 25%);
+  }
 
   a:hover {
     text-decoration: underline;
