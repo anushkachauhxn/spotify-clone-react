@@ -3,6 +3,7 @@ import Card from "../Card/Card";
 import Navbar from "../Navbar/Navbar";
 import RectCard from "../RectCard/RectCard";
 import "./Home.scss";
+import { topLists, sections } from "../../database/data";
 
 function Home() {
   useEffect(() => {
@@ -30,30 +31,13 @@ function Home() {
               <h1>Good evening</h1>
             </div>
             <div className="content">
-              <RectCard
-                img="https://i.scdn.co/image/ab67706f0000000398bf3a4db76317b0c50f3b7c"
-                title="This is Taylor Swift"
-              />
-              <RectCard
-                img="https://i.scdn.co/image/ab67706f0000000398bf3a4db76317b0c50f3b7c"
-                title="This is Taylor Swift"
-              />
-              <RectCard
-                img="https://i.scdn.co/image/ab67706f0000000398bf3a4db76317b0c50f3b7c"
-                title="This is Taylor Swift"
-              />
-              <RectCard
-                img="https://i.scdn.co/image/ab67706f0000000398bf3a4db76317b0c50f3b7c"
-                title="This is Taylor Swift"
-              />
-              <RectCard
-                img="https://i.scdn.co/image/ab67706f0000000398bf3a4db76317b0c50f3b7c"
-                title="This is Taylor Swift"
-              />
-              <RectCard
-                img="https://i.scdn.co/image/ab67706f0000000398bf3a4db76317b0c50f3b7c"
-                title="This is Taylor Swift"
-              />
+              {topLists.map((list) => (
+                <RectCard
+                  title={list.title}
+                  image={list.image}
+                  link={list.link}
+                />
+              ))}
             </div>
           </section>
 
