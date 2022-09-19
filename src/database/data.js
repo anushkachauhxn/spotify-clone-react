@@ -50,6 +50,50 @@ const playlists = [
     title: "Violin Covers",
     link: "",
   },
+  {
+    title: "Uptown Funk",
+    link: "",
+  },
+  {
+    title: "Gym Playlist",
+    link: "",
+  },
+  {
+    title: "Top Gaming Tracks",
+    link: "",
+  },
+  {
+    title: "Indie Tunes | Best Indie Hits",
+    link: "",
+  },
+  {
+    title: "This is Taylor Swift",
+    link: "",
+  },
+  {
+    title: "This is Arctic Monkeys",
+    link: "",
+  },
+  {
+    title: "Alps Radio",
+    link: "",
+  },
+  {
+    title: "This is BTS",
+    link: "",
+  },
+  {
+    title: "Love is a Laserquest",
+    link: "",
+  },
+  {
+    title: "Yeh Fitoor Mera",
+    link: "",
+  },
+  {
+    title: "Violin Covers",
+    link: "",
+  },
 ];
 
 //   For the Rectangular Cards - 6 only

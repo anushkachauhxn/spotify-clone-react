@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Sidebar.scss";
 import { playlists } from "../../database/data";
 import Logo from "../../assets/images/spotify-full.jpg";
 
 function Sidebar() {
+  const setPlaylistsSize = () => {
+    // To change width of track slider dynamically
+    const playlists = document.querySelector(".sidebar .playlists");
+    playlists.style.height = `${Math.max(200, window.innerHeight - 450)}px`;
+  };
+
+  useEffect(() => {
+    setPlaylistsSize();
+
+    window.addEventListener("resize", () => {
+      setPlaylistsSize();
+    });
+  });
+
   return (
     <div className="sidebar">
       <div className="logo">
