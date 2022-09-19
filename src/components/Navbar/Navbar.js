@@ -35,7 +35,6 @@ function Navbar({ home }) {
               alt=""
             />
             <h4>Matilda_</h4>
-            <ion-icon name="caret-up"></ion-icon>
             <ion-icon name="caret-down"></ion-icon>
           </button>
 
