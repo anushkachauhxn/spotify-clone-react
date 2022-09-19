@@ -141,45 +141,46 @@ const sections = [
     category: "Made for You",
     playlists: [
       {
-        title: "This is Taylor Swift",
-        subtitle: "The essential tracks, all in one playlist.",
+        title: "Discover Weekly",
+        subtitle:
+          "Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you. Updates every Monday.",
         image:
-          "https://i.scdn.co/image/ab67706f0000000398bf3a4db76317b0c50f3b7c",
+          "https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/1hOQbRi213JeaYwxaa4gdmrx7g2k9-eUbA8EtGNNKyW09kMy20Q23LWwjGBBP2xvcCMtFglKraGrB7foVW0-DKBNBzZGVo4irckiud6AwEk=/NzU6ODA6OTBUNTItNzAtMg==",
         artist: false,
       },
       {
-        title: "Amit Trivedi Radio",
-        subtitle: "By Spotify",
+        title: "Daily Mix 1",
+        subtitle: "Pritam, Rahul Sharma, Jatin-Lalit and more",
         image:
-          "https://seeded-session-images.scdn.co/v1/img/artist/7HCqGPJcQTyGJ2yqntbuyr/en",
+          "https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebcb6926f44f620555ba444fca/1/en/large",
         artist: false,
       },
       {
-        title: "Adele",
-        subtitle: "Artist",
+        title: "Daily Mix 2",
+        subtitle: "BTS, AgustD, j-hope and more",
         image:
-          "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
-        artist: true,
-      },
-      {
-        title: "reputation",
-        subtitle: "Taylor Swift",
-        image:
-          "https://i.scdn.co/image/ab67616d0000b273da5d5aeeabacacc1263c0f4b",
+          "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb5704a64f34fe29ff73ab56bb/2/en/large",
         artist: false,
       },
       {
-        title: "Harry Styles",
-        subtitle: "Artist",
+        title: "Daily Mix 3",
+        subtitle: "Eminem, Mac Miller, Logic and more",
         image:
-          "https://i.scdn.co/image/ab6761610000e5ebf7db7c8ede90a019c54590bb",
-        artist: true,
+          "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eba00b11c129b27a88fc72f36b/3/en/large",
+        artist: false,
       },
       {
-        title: "Illuminate (Deluxe)",
-        subtitle: "Shawn Mendes",
+        title: "Daily Mix 4",
+        subtitle: "Bob Marley & The Wailers, Aswad, Black Roots and more",
         image:
-          "https://i.scdn.co/image/ab67616d0000b273ea3ef7697cfd5705b8f47521",
+          "https://dailymix-images.scdn.co/v2/img/4cd57e5e12ea2c24644c40886d65a9b22eca9802/4/en/large",
+        artist: false,
+      },
+      {
+        title: "Daily Mix 5",
+        subtitle: "Disturbed, Breaking Benjamin, Three Days Grace and more",
+        image:
+          "https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb012addc95f5b2e7283f45446/5/en/large",
         artist: false,
       },
     ],
