@@ -91,6 +91,55 @@ const topLists = [
 // For different sections with Cards
 const sections = [
   {
+    category: "Best of Artists",
+    playlists: [
+      {
+        title: "This is Selena Gomez",
+        subtitle:
+          "Listen to Selena's latest releases, plus all her essential hits.",
+        image:
+          "https://i.scdn.co/image/ab67706f000000037cda1a881997b0bb1ca0eb92",
+        artist: false,
+      },
+      {
+        title: "This is Camila Cabello",
+        subtitle:
+          "You'll Never Be The Same after listening to all her biggest hits.",
+        image:
+          "https://i.scdn.co/image/ab67706f00000003181896dd694bc09e4a0f13c8",
+        artist: false,
+      },
+      {
+        title: "This is Arijit Singh",
+        subtitle: "The Bollywood crooner's best songs.",
+        image:
+          "https://i.scdn.co/image/ab67706f000000033ec51dd9c17a9add42c2e249",
+        artist: false,
+      },
+      {
+        title: "This is Conan Grey",
+        subtitle:
+          "This is Conan Gray. The essential tracks, all in one playlist.",
+        image: "https://thisis-images.scdn.co/37i9dQZF1DZ06evO2SyYJ7-large.jpg",
+        artist: false,
+      },
+      {
+        title: "This is Shreya Ghoshal",
+        subtitle:
+          "This is Shreya Ghoshal. The essential tracks, all in one playlist.",
+        image: "https://thisis-images.scdn.co/37i9dQZF1DZ06evO0arULD-large.jpg",
+        artist: false,
+      },
+      {
+        title: "This is Sunidhi Chauhan",
+        subtitle:
+          "This is Sunidhi Chauhan. The essential tracks, all in one playlist.",
+        image: "https://thisis-images.scdn.co/37i9dQZF1DZ06evO1SfCKv-large.jpg",
+        artist: false,
+      },
+    ],
+  },
+  {
     category: "Your Top Mixes",
     playlists: [
       {
@@ -232,53 +281,7 @@ const sections = [
       },
     ],
   },
-  {
-    category: "Best of Artists",
-    playlists: [
-      {
-        title: "This is Taylor Swift",
-        subtitle: "The essential tracks, all in one playlist.",
-        image:
-          "https://i.scdn.co/image/ab67706f0000000398bf3a4db76317b0c50f3b7c",
-        artist: false,
-      },
-      {
-        title: "Amit Trivedi Radio",
-        subtitle: "By Spotify",
-        image:
-          "https://seeded-session-images.scdn.co/v1/img/artist/7HCqGPJcQTyGJ2yqntbuyr/en",
-        artist: false,
-      },
-      {
-        title: "Adele",
-        subtitle: "Artist",
-        image:
-          "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
-        artist: true,
-      },
-      {
-        title: "reputation",
-        subtitle: "Taylor Swift",
-        image:
-          "https://i.scdn.co/image/ab67616d0000b273da5d5aeeabacacc1263c0f4b",
-        artist: false,
-      },
-      {
-        title: "Harry Styles",
-        subtitle: "Artist",
-        image:
-          "https://i.scdn.co/image/ab6761610000e5ebf7db7c8ede90a019c54590bb",
-        artist: true,
-      },
-      {
-        title: "Illuminate (Deluxe)",
-        subtitle: "Shawn Mendes",
-        image:
-          "https://i.scdn.co/image/ab67616d0000b273ea3ef7697cfd5705b8f47521",
-        artist: false,
-      },
-    ],
-  },
+
   {
     category: "Spotify original & exclusive shows",
     playlists: [
