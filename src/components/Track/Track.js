@@ -5,6 +5,8 @@ function Track() {
   const [vol, setVol] = useState(100);
 
   const setSliders = () => {
+    // To show value - grey for unselected and white for selected part
+    //  --slider-color: changes according to hover
     const sliders = document.querySelectorAll(".slider");
     sliders.forEach((slider) => {
       const min = slider.min,
@@ -15,8 +17,21 @@ function Track() {
     });
   };
 
+  const setTrackSliderSize = () => {
+    // To change width of track slider dynamically
+    const trackSlider = document.querySelector(
+      ".track .track-player .song-slider"
+    );
+    trackSlider.style.width = `${Math.max(196, window.innerWidth / 2.8)}px`;
+  };
+
   useEffect(() => {
     setSliders();
+    setTrackSliderSize();
+
+    window.addEventListener("resize", () => {
+      setTrackSliderSize();
+    });
   });
 
   return (
@@ -104,7 +119,6 @@ function Track() {
             max={100}
             onInput={(event) => {
               setVol(event.target.value);
-              console.log(vol);
               setSliders();
             }}
           />

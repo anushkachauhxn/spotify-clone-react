@@ -37,13 +37,28 @@
       width: 56px;
     }
     .song {
-      margin-left: 20px;
-      margin-right: 36px;
+      margin-left: 16px;
+      margin-right: 24px;
+      a:hover {
+        text-decoration: underline;
+      }
+      .song-title,
+      .song-artist {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+      }
       .song-artist {
         margin-top: 6px;
       }
-      a:hover {
-        text-decoration: underline;
+
+      @media only screen and (max-width: 772px) {
+        .song-title {
+          font-size: 13px;
+        }
+        .song-artist {
+          font-size: 11px;
+        }
       }
     }
   }
@@ -54,7 +69,7 @@
 
     .controls {
       height: 42px;
-      column-gap: 32px;
+      column-gap: 18px;
 
       .icon {
         height: 24px;
@@ -78,9 +93,6 @@
 
     .progress-bar {
       column-gap: 12px;
-      .song-slider {
-        width: 500px;
-      }
       p {
         height: 12px;
       }
@@ -89,6 +101,9 @@
 
   .track-right {
     column-gap: 18px;
+    .volume {
+      width: 90px;
+    }
   }
 
   /* Sliders: Song bar + Volume bar */
