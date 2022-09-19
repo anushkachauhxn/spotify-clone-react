@@ -1,11 +1,11 @@
 import React from "react";
 import "./Card.scss";
 
-function Card({ img, title, subtitle, artist }) {
+function Card({ title, subtitle, image, artist }) {
   return (
     <div className="card">
       <div className={`image ${artist && "artist"}`}>
-        <img src={img} alt="" />
+        <img src={image} alt="" />
         <div className="play-btn">
           <ion-icon name="play-circle"></ion-icon>
         </div>
