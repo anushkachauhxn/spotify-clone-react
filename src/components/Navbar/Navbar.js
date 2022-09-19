@@ -5,11 +5,11 @@ import { user } from "../../database/data";
 function Navbar({ home }) {
   return (
     <div className="navbar">
-      <div className="navbar-left">
+      <div className="navbar-left back">
         <button className="nav-btns">
           <ion-icon name="chevron-back-circle"></ion-icon>
         </button>
-        <button className="nav-btns" disabled>
+        <button className="nav-btns forward" disabled>
           <ion-icon name="chevron-forward-circle"></ion-icon>
         </button>
         {!home && (

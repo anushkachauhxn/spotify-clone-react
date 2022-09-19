@@ -62,6 +62,12 @@
         }
       }
     }
+
+    @media screen and (max-width: 1024px) {
+      .forward {
+        display: none;
+      }
+    }
   }
 
   .navbar-right {
@@ -78,6 +84,11 @@
       &:hover {
         background: #000;
         border: 1.8px solid rgba(255, 255, 255, 0.7);
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      .upgrade-btn {
+        display: none;
       }
     }
 
@@ -118,7 +129,7 @@
       }
 
       .menu-btn {
-        column-gap: 8px;
+        column-gap: 4px;
         padding: 2px 8px 2px 2px;
         background: #0a0713;
         img {
@@ -138,12 +149,22 @@
           display: block;
         }
         .menu-btn {
-          column-gap: 8px;
-          padding: 2px 8px 2px 2px;
-          background: #282828;
           ion-icon {
             transform: rotate(180deg);
           }
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        .menu-btn {
+          padding: 2px;
+          h4,
+          ion-icon {
+            display: none;
+          }
+        }
+        &.active {
+          padding: 2px;
         }
       }
     }
