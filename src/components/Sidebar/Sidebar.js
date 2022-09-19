@@ -1,5 +1,6 @@
 import React from "react";
 import "./Sidebar.scss";
+import { playlists } from "../../database/data";
 import Logo from "../../assets/images/spotify-full.jpg";
 
 function Sidebar() {
@@ -58,17 +59,11 @@ function Sidebar() {
       </ul>
 
       <ul className="playlists">
-        <li>Uptown Funk</li>
-        <li>Gym Playlist</li>
-        <li>Top Gaming Tracks</li>
-        <li>Indie Tunes | Best Indie Hits</li>
-        <li>This is Taylor Swift</li>
-        <li>This is Arctic Monkeys</li>
-        <li>Alps Radio</li>
-        <li>This is BTS</li>
-        <li>Love is a Laserquest</li>
-        <li>Yeh Fitoor Mera</li>
-        <li>Violin Covers</li>
+        {playlists.map((playlist) => (
+          <li>
+            <a href={playlist.link}>{playlist.title}</a>
+          </li>
+        ))}
       </ul>
 
       <div className="install nav-item">
