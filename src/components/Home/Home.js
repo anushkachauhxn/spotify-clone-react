@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../Card/Card";
 import Navbar from "../Navbar/Navbar";
 import RectCard from "../RectCard/RectCard";
@@ -6,8 +6,8 @@ import "./Home.scss";
 import { topLists, sections, playlists } from "../../database/data";
 
 function Home() {
+  /* Navbar - background changes with scroll */
   useEffect(() => {
-    /* Navbar - background changes with scroll */
     const scrollContainer = document.querySelector(".home"),
       navbar = document.querySelector(".navbar");
 
@@ -19,6 +19,35 @@ function Home() {
       });
     }
   });
+
+  /* Responsive Style */
+  let [cardNum, setCardNum] = useState(6);
+
+  const getCardsNum = () => {
+    const width =
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
+
+    if (width > 1500) {
+      setCardNum(6);
+    } else if (width > 1300) {
+      setCardNum(5);
+    } else if (width > 972) {
+      setCardNum(4);
+    } else if (width > 772) {
+      setCardNum(3);
+    } else {
+      setCardNum(2);
+    }
+  };
+
+  useEffect(() => {
+    getCardsNum();
+    window.addEventListener("resize", () => {
+      getCardsNum();
+    });
+  }, []);
 
   return (
     <div className="home">
@@ -52,7 +81,7 @@ function Home() {
                 </p>
               </div>
               <div className="content">
-                {section.playlists.slice(0, 6).map((playlist) => (
+                {section.playlists.slice(0, cardNum).map((playlist) => (
                   <Card
                     title={playlist.title}
                     subtitle={playlist.subtitle}

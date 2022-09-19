@@ -26,8 +26,29 @@
       }
       .content {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 24px;
+      }
+      @media only screen and (min-width: 1500px) {
+        // screen size = 1500px and above
+        .content {
+          grid-template-columns: repeat(6, 1fr);
+        }
+      }
+      @media only screen and (min-width: 1300px) and (max-width: 1500px) {
+        .content {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+      @media only screen and (min-width: 972px) and (max-width: 1300px) {
+        .content {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      @media only screen and (min-width: 772px) and (max-width: 972px) {
+        .content {
+          grid-template-columns: repeat(3, 1fr);
+        }
       }
     }
 
