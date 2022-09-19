@@ -1,7 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Track.scss";
 
 function Track() {
+  const [vol, setVol] = useState(100);
+
   const setSliders = () => {
     const sliders = document.querySelectorAll(".slider");
     sliders.forEach((slider) => {
@@ -85,7 +87,12 @@ function Track() {
           <ion-icon name="laptop-outline"></ion-icon>
         </span>
         <span className="icon">
-          <ion-icon name="volume-medium-outline"></ion-icon>
+          {vol === 0 && <ion-icon name="volume-off-outline"></ion-icon>}
+          {vol <= 30 && <ion-icon name="volume-low-outline"></ion-icon>}
+          {vol > 30 && vol <= 70 && (
+            <ion-icon name="volume-medium-outline"></ion-icon>
+          )}
+          {vol > 70 && <ion-icon name="volume-high-outline"></ion-icon>}
         </span>
         <span className="volume">
           <input
@@ -95,7 +102,11 @@ function Track() {
             id="volume"
             min={0}
             max={100}
-            onInput={() => setSliders()}
+            onInput={(event) => {
+              setVol(event.target.value);
+              console.log(vol);
+              setSliders();
+            }}
           />
         </span>
       </div>
