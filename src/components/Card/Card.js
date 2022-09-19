@@ -11,8 +11,8 @@ function Card({ title, subtitle, image, artist }) {
         </div>
       </div>
       <div className="text">
-        <h4>{title}</h4>
-        <h5>{subtitle}</h5>
+        <h4 className="card-title">{title}</h4>
+        <h5 className="card-subtitle">{subtitle}</h5>
       </div>
     </div>
   );
