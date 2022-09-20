@@ -161,7 +161,7 @@ const sections = [
         artist: false,
       },
       {
-        title: "This is Conan Grey",
+        title: "This is Conan Gray",
         subtitle:
           "This is Conan Gray. The essential tracks, all in one playlist.",
         image: "https://thisis-images.scdn.co/37i9dQZF1DZ06evO2SyYJ7-large.jpg",
