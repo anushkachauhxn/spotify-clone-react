@@ -55,13 +55,14 @@ function Home() {
         <Navbar home={true} />
 
         <div className="home-container">
-          <section className="section-1">
+          <section className="section-1" key={0}>
             <div className="heading">
               <h1>Good evening</h1>
             </div>
             <div className="content">
-              {topLists.slice(0, 6).map((list) => (
+              {topLists.slice(0, 6).map((list, index) => (
                 <RectCard
+                  key={index}
                   title={list.title}
                   image={list.image}
                   link={list.link}
@@ -70,8 +71,8 @@ function Home() {
             </div>
           </section>
 
-          {sections.map((section) => (
-            <section>
+          {sections.map((section, index) => (
+            <section key={index + 1}>
               <div className="heading">
                 <h2>
                   <a href="">{section.category}</a>
@@ -81,8 +82,9 @@ function Home() {
                 </p>
               </div>
               <div className="content">
-                {section.playlists.slice(0, cardNum).map((playlist) => (
+                {section.playlists.slice(0, cardNum).map((playlist, index) => (
                   <Card
+                    key={index}
                     title={playlist.title}
                     subtitle={playlist.subtitle}
                     image={playlist.image}

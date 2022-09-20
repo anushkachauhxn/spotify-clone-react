@@ -73,8 +73,8 @@ function Sidebar() {
       </ul>
 
       <ul className="playlists">
-        {playlists.map((playlist) => (
-          <li>
+        {playlists.map((playlist, index) => (
+          <li key={index}>
             <a href={playlist.link}>{playlist.title}</a>
           </li>
         ))}
