@@ -205,6 +205,27 @@ const sections = [
         image: "https://thisis-images.scdn.co/37i9dQZF1DZ06evO1SfCKv-large.jpg",
         artist: false,
       },
+      {
+        title: "This is A. R. Rahman",
+        subtitle:
+          "This is A.R. Rahman. The essential tracks, all in one playlist.",
+        image: "https://thisis-images.scdn.co/37i9dQZF1DZ06evO0KEAbC-large.jpg",
+        artist: false,
+      },
+      {
+        title: "This is Halsey",
+        subtitle: "The essential Halsey, all in one place.",
+        image:
+          "https://i.scdn.co/image/ab67706f00000003a39589c9b0a3606aa6bac46b",
+        artist: false,
+      },
+      {
+        title: "This is Coldplay",
+        subtitle: "The essential tracks, all in one playlist.",
+        image:
+          "https://i.scdn.co/image/ab67706f00000003a231f671c289555cfd09f716",
+        artist: false,
+      },
     ],
   },
   {

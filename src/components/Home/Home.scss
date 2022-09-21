@@ -75,11 +75,14 @@
       padding-bottom: 8px;
       .heading {
         padding-bottom: 6px;
+        p {
+          display: none;
+        }
       }
       .content {
         margin-right: -18px;
-        grid-template-columns: repeat(6, 1fr);
         grid-gap: 18px;
+        display: flex;
         overflow-x: scroll;
       }
     }
@@ -87,6 +90,7 @@
       padding-bottom: 24px;
       .content {
         margin-right: 0;
+        display: grid;
         grid-gap: 10px;
       }
     }

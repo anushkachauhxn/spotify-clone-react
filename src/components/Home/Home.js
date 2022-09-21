@@ -40,7 +40,7 @@ function Home() {
     } else if (width > 540) {
       setCardNum(2);
     } else {
-      setCardNum(6);
+      setCardNum(0);
     }
   };
 
@@ -84,15 +84,17 @@ function Home() {
                 </p>
               </div>
               <div className="content">
-                {section.playlists.slice(0, cardNum).map((playlist, index) => (
-                  <Card
-                    key={index}
-                    title={playlist.title}
-                    subtitle={playlist.subtitle}
-                    image={playlist.image}
-                    artist={playlist.artist}
-                  />
-                ))}
+                {section.playlists
+                  .slice(0, cardNum || section.playlists.length)
+                  .map((playlist, index) => (
+                    <Card
+                      key={index}
+                      title={playlist.title}
+                      subtitle={playlist.subtitle}
+                      image={playlist.image}
+                      artist={playlist.artist}
+                    />
+                  ))}
               </div>
             </section>
           ))}
