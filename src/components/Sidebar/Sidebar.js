@@ -5,7 +5,7 @@ import Logo from "../../assets/images/spotify-full.jpg";
 
 function Sidebar() {
   const setPlaylistsSize = () => {
-    // To change width of track slider dynamically
+    // To change height of playlists section dynamically
     const playlists = document.querySelector(".sidebar .playlists");
     playlists.style.height = `${Math.max(200, window.innerHeight - 450)}px`;
   };

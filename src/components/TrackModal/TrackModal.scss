@@ -1,0 +1,102 @@
+.track-modal,
+.track-player,
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.track-info,
+.song-timings,
+.controls,
+.track-options {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.track-modal {
+  padding: 36px 36px 24px 36px;
+  height: 75vh;
+  width: 80vw;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 5px;
+  background: #2a2a2a;
+
+  .icon {
+    height: 24px;
+    ion-icon {
+      font-size: 24px;
+    }
+  }
+
+  > div {
+    width: 100%;
+  }
+
+  .track-image {
+    text-align: center;
+    img {
+      width: 80%;
+      border-radius: 8px;
+    }
+  }
+
+  .track-info {
+    .song {
+      .song-title {
+        font-size: 22px;
+        font-weight: 700;
+      }
+      .song-artist {
+        margin-top: 5px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .track-player {
+    div {
+      width: 100%;
+    }
+
+    .progress-bar {
+      .slider {
+        margin-bottom: 8px;
+        width: 100%;
+      }
+    }
+    .controls {
+      .icon {
+        height: 28px;
+        width: 28px;
+        ion-icon {
+          font-size: 28px;
+        }
+        &.play-btn {
+          height: 60px;
+          width: 60px;
+          ion-icon {
+            font-size: 60px;
+          }
+        }
+      }
+    }
+  }
+
+  .track-options {
+    .track-options-right {
+      .icon {
+        margin-left: 18px;
+      }
+    }
+  }
+}

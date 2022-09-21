@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Track.scss";
+import Modal from "@mui/material/Modal";
+import TrackModal from "../TrackModal/TrackModal";
 
 function Track() {
   const [vol, setVol] = useState(100);
+  const [openModal, setOpenModal] = useState(false);
 
   const setSliders = () => {
     // To show value - grey for unselected and white for selected part
@@ -25,12 +28,23 @@ function Track() {
     trackSlider.style.width = `${Math.max(196, window.innerWidth / 2.8)}px`;
   };
 
+  const handleModalClick = () => {
+    const track = document.querySelector(".track");
+    if (window.innerWidth < 540) {
+      track.onclick = () => setOpenModal(true);
+    } else {
+      track.onclick = null;
+    }
+  };
+
   useEffect(() => {
     setSliders();
     setTrackSliderSize();
+    handleModalClick();
 
     window.addEventListener("resize", () => {
       setTrackSliderSize();
+      handleModalClick();
     });
   });
 
@@ -135,6 +149,10 @@ function Track() {
         <span className="icon">
           <ion-icon name="play"></ion-icon>
         </span>
+
+        <Modal open={openModal} onClose={() => setOpenModal(false)}>
+          <TrackModal />
+        </Modal>
       </div>
     </div>
   );
