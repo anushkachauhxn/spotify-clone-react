@@ -5,8 +5,8 @@ import { user } from "../../database/data";
 function Navbar({ home }) {
   return (
     <div className="navbar">
-      <div className="navbar-left back">
-        <button className="nav-btns">
+      <div className="navbar-left">
+        <button className="nav-btns back">
           <ion-icon name="chevron-back-circle"></ion-icon>
         </button>
         <button className="nav-btns forward" disabled>
@@ -21,10 +21,15 @@ function Navbar({ home }) {
       </div>
 
       <div className="navbar-right">
+        <button className="playlist-btn">
+          <ion-icon name="list"></ion-icon>
+        </button>
+
         <button className="upgrade-btn">
           <h4>Upgrade</h4>
         </button>
-        <div className="menu ">
+
+        <div className="menu">
           <button
             onClick={() => {
               document.querySelector(".menu").classList.toggle("active");

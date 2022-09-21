@@ -78,6 +78,10 @@
       border-radius: 20px;
     }
 
+    .playlist-btn {
+      display: none;
+    }
+
     .upgrade-btn {
       padding: 0 18px;
       border: 1.5px solid rgba(255, 255, 255, 0.8);
@@ -165,6 +169,32 @@
         }
         &.active {
           padding: 2px;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 540px) {
+  .navbar {
+    padding: 0 16px;
+    height: 52px;
+
+    .navbar-left button {
+      display: none;
+    }
+
+    .navbar-right {
+      column-gap: 12px;
+      .playlist-btn {
+        display: flex;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        background: #0a0713;
+        ion-icon {
+          font-size: 20px;
         }
       }
     }
