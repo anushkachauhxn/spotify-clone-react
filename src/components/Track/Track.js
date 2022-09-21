@@ -92,6 +92,9 @@ function Track() {
       </div>
 
       <div className="track-right">
+        <span className="icon menu">
+          <ion-icon name="ellipsis-horizontal"></ion-icon>
+        </span>
         <span className="icon">
           <ion-icon name="musical-note-outline"></ion-icon>
         </span>
