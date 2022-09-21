@@ -8,90 +8,114 @@ const user = {
 const playlists = [
   {
     title: "Uptown Funk",
+    image: "https://i.scdn.co/image/ab67616d0000b273e419ccba0baa8bd3f3d7abf2",
     link: "",
   },
   {
     title: "Gym Playlist",
+    image: "https://i.scdn.co/image/ab67706c0000bebbc5cc2fbe603427c47b630014",
     link: "",
   },
   {
     title: "Top Gaming Tracks",
+    image: "https://i.scdn.co/image/ab67706c0000bebb72ed21e90d7fc2e568c24ad5",
     link: "",
   },
   {
     title: "Indie Tunes | Best Indie Hits",
+    image: "https://i.scdn.co/image/ab67706c0000bebbf6391b95b72c240d1fd826bb",
     link: "",
   },
   {
     title: "This is Taylor Swift",
+    image: "https://i.scdn.co/image/ab67706f0000000398bf3a4db76317b0c50f3b7c",
     link: "",
   },
   {
     title: "This is Arctic Monkeys",
+    image: "https://thisis-images.scdn.co/37i9dQZF1DZ06evO4BaAkp-large.jpg",
     link: "",
   },
   {
     title: "Alps Radio",
+    image:
+      "https://seeded-session-images.scdn.co/v1/img/artist/0bvLEf3ydME5vTuOwp6aKH/en",
     link: "",
   },
   {
     title: "This is BTS",
+    image: "https://i.scdn.co/image/ab67706f00000003a7aec3961666dee881cee250",
     link: "",
   },
   {
     title: "Love is a Laserquest",
+    image: "https://i.scdn.co/image/ab67616d0000b273b38e53ebc43deea5ae7e57fd",
     link: "",
   },
   {
     title: "Yeh Fitoor Mera",
+    image: "https://i.scdn.co/image/ab67616d0000b2736c678e8928cc0add9fc23bfd",
     link: "",
   },
   {
     title: "Violin Covers",
+    image: "https://i.scdn.co/image/ab67706c0000bebb67d691f27ba898b859c99d4b",
     link: "",
   },
   {
     title: "Uptown Funk",
+    image: "https://i.scdn.co/image/ab67616d0000b273e419ccba0baa8bd3f3d7abf2",
     link: "",
   },
   {
     title: "Gym Playlist",
+    image: "https://i.scdn.co/image/ab67706c0000bebbc5cc2fbe603427c47b630014",
     link: "",
   },
   {
     title: "Top Gaming Tracks",
+    image: "https://i.scdn.co/image/ab67706c0000bebb72ed21e90d7fc2e568c24ad5",
     link: "",
   },
   {
     title: "Indie Tunes | Best Indie Hits",
+    image: "https://i.scdn.co/image/ab67706c0000bebbf6391b95b72c240d1fd826bb",
     link: "",
   },
   {
     title: "This is Taylor Swift",
+    image: "https://i.scdn.co/image/ab67706f0000000398bf3a4db76317b0c50f3b7c",
     link: "",
   },
   {
     title: "This is Arctic Monkeys",
+    image: "https://thisis-images.scdn.co/37i9dQZF1DZ06evO4BaAkp-large.jpg",
     link: "",
   },
   {
     title: "Alps Radio",
+    image:
+      "https://seeded-session-images.scdn.co/v1/img/artist/0bvLEf3ydME5vTuOwp6aKH/en",
     link: "",
   },
   {
     title: "This is BTS",
+    image: "https://i.scdn.co/image/ab67706f00000003a7aec3961666dee881cee250",
     link: "",
   },
   {
     title: "Love is a Laserquest",
+    image: "https://i.scdn.co/image/ab67616d0000b273b38e53ebc43deea5ae7e57fd",
     link: "",
   },
   {
     title: "Yeh Fitoor Mera",
+    image: "https://i.scdn.co/image/ab67616d0000b2736c678e8928cc0add9fc23bfd",
     link: "",
   },
   {
     title: "Violin Covers",
+    image: "https://i.scdn.co/image/ab67706c0000bebb67d691f27ba898b859c99d4b",
     link: "",
   },
 ];

@@ -19,10 +19,7 @@ function PlaylistsModal() {
       <ul className="playlists">
         {playlists.map((playlist, index) => (
           <li key={index}>
-            <img
-              src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebd8b9980db67272cb4d2c3daf/2/en/large"
-              alt=""
-            />
+            <img src={playlist.image} alt="" />
             <a href={playlist.link}>{playlist.title}</a>
           </li>
         ))}
