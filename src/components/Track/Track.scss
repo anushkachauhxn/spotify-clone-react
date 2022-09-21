@@ -6,6 +6,7 @@
 .track-left,
 .track-player,
 .track-right,
+.track-right-mob,
 .controls,
 .progress-bar,
 .song-slider,
@@ -23,6 +24,7 @@
   height: 90px;
   width: calc(100% - 32px);
   background-color: #181818;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 
   .icon {
     height: 20px;
@@ -124,6 +126,10 @@
     }
   }
 
+  .track-right-mob {
+    display: none;
+  }
+
   /* Sliders: Song bar + Volume bar */
   .slider {
     -webkit-appearance: none;
@@ -171,6 +177,47 @@
     &.active {
       opacity: 1;
       color: #57b65f;
+    }
+  }
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 540px) {
+  .track {
+    padding: 0 18px;
+    height: 70px;
+    background-color: #181818;
+
+    .icon {
+      height: 30px;
+      ion-icon {
+        font-size: 30px;
+      }
+    }
+
+    .track-left {
+      .song {
+        .song-title {
+          font-size: 16px;
+        }
+        .song-artist {
+          margin-top: 4px;
+          font-size: 13px;
+        }
+      }
+      .icon {
+        display: none;
+      }
+    }
+
+    .track-player,
+    .track-right {
+      display: none;
+    }
+
+    .track-right-mob {
+      display: flex;
+      column-gap: 12px;
     }
   }
 }

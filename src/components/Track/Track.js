@@ -127,6 +127,15 @@ function Track() {
           />
         </span>
       </div>
+
+      <div className="track-right-mob">
+        <span className="icon">
+          <ion-icon name="heart-outline"></ion-icon>
+        </span>
+        <span className="icon">
+          <ion-icon name="play"></ion-icon>
+        </span>
+      </div>
     </div>
   );
 }

@@ -8,3 +8,10 @@
     display: flex;
   }
 }
+
+/* Mobile Screen */
+@media screen and (max-width: 540px) {
+  .app .main {
+    height: calc(100vh - 70px);
+  }
+}
