@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.scss";
 import { user } from "../../database/data";
+import Modal from "@mui/material/Modal";
+import PlaylistsModal from "../PlaylistsModal/PlaylistsModal";
 
 function Navbar({ home }) {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className="navbar">
       <div className="navbar-left">
@@ -21,9 +25,15 @@ function Navbar({ home }) {
       </div>
 
       <div className="navbar-right">
-        <button className="playlist-btn">
-          <ion-icon name="list"></ion-icon>
-        </button>
+        <div className="playlists">
+          <button className="playlist-btn" onClick={() => setOpenModal(true)}>
+            <ion-icon name="list"></ion-icon>
+          </button>
+
+          <Modal open={openModal} onClose={() => setOpenModal(false)}>
+            <PlaylistsModal />
+          </Modal>
+        </div>
 
         <button className="upgrade-btn">
           <h4>Upgrade</h4>
