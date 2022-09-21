@@ -121,3 +121,10 @@ p {
     background: rgba(255, 255, 255, 0.75);
   }
 }
+
+/* Mobile Screen */
+@media screen and (max-width: 540px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

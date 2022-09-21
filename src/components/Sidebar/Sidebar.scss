@@ -98,3 +98,10 @@
     }
   }
 }
+
+/* Mobile Screen */
+@media screen and (max-width: 540px) {
+  .sidebar {
+    display: none;
+  }
+}

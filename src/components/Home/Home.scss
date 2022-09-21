@@ -65,3 +65,12 @@
     }
   }
 }
+
+/* Mobile Screen */
+@media screen and (max-width: 540px) {
+  .home .home-container section .content {
+    grid-template-columns: repeat(6, 1fr);
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+}

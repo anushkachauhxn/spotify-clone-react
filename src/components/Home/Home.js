@@ -37,8 +37,10 @@ function Home() {
       setCardNum(4);
     } else if (width > 772) {
       setCardNum(3);
-    } else {
+    } else if (width > 540) {
       setCardNum(2);
+    } else {
+      setCardNum(6);
     }
   };
 
