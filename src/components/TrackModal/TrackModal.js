@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./TrackModal.scss";
 
 function TrackModal() {
+  const setSlider = () => {
+    // To show value - grey for unselected and white for selected part
+    //  --slider-color: changes according to hover
+    const sliders = document.querySelectorAll(".slider");
+    sliders.forEach((slider) => {
+      const min = slider.min,
+        max = slider.max,
+        value = slider.value;
+      var percentage = ((value - min) / (max - min)) * 100;
+      slider.style.background = `linear-gradient(to right, var(--slider-color) 0%, var(--slider-color) ${percentage}%, #ffffff66 ${percentage}%, #ffffff66 100%)`;
+    });
+  };
+  useEffect(() => {
+    setSlider();
+  });
+
   return (
     <div className="track-modal">
       <div className="track-image">
@@ -36,6 +52,7 @@ function TrackModal() {
               id="song-time"
               min={0}
               max={100}
+              onInput={() => setSlider()}
             />
           </div>
           <div className="song-timings">

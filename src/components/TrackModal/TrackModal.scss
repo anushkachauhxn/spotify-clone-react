@@ -1,16 +1,16 @@
 .track-modal,
-.track-player,
-.progress-bar {
+.track-modal .track-player,
+.track-modal .progress-bar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.track-info,
-.song-timings,
-.controls,
-.track-options {
+.track-modal .track-info,
+.track-modal .song-timings,
+.track-modal .controls,
+.track-modal .track-options {
   width: 100%;
   display: flex;
   flex-direction: row;
