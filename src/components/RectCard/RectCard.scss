@@ -9,8 +9,7 @@
 
   .rect-card-left {
     img {
-      height: 78px;
-      width: 78px;
+      height: 100%;
     }
   }
 
@@ -59,6 +58,19 @@
     .rect-card-right {
       .play-btn {
         opacity: 1;
+      }
+    }
+  }
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 540px) {
+  .rect-card {
+    height: 52px;
+    .rect-card-right {
+      padding: 0 10px;
+      .play-btn {
+        display: none;
       }
     }
   }

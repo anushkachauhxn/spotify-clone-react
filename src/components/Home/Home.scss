@@ -68,9 +68,27 @@
 
 /* Mobile Screen */
 @media screen and (max-width: 540px) {
-  .home .home-container section .content {
-    grid-template-columns: repeat(6, 1fr);
-    overflow: hidden;
-    overflow-x: scroll;
+  .home .home-container {
+    padding: 0 18px;
+
+    section {
+      padding-bottom: 8px;
+      .heading {
+        padding-bottom: 6px;
+      }
+      .content {
+        margin-right: -18px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 18px;
+        overflow-x: scroll;
+      }
+    }
+    .section-1 {
+      padding-bottom: 24px;
+      .content {
+        margin-right: 0;
+        grid-gap: 10px;
+      }
+    }
   }
 }
