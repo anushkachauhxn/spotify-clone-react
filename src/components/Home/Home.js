@@ -3,7 +3,7 @@ import Card from "../Card/Card";
 import Navbar from "../Navbar/Navbar";
 import RectCard from "../RectCard/RectCard";
 import "./Home.scss";
-import { topLists, sections, playlists } from "../../database/data";
+import { topLists, sections } from "../../database/data";
 
 function Home() {
   /* Navbar - background changes with scroll */

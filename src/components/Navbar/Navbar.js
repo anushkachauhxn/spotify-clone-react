@@ -30,7 +30,11 @@ function Navbar({ home }) {
             <ion-icon name="list"></ion-icon>
           </button>
 
-          <Modal open={openModal} onClose={() => setOpenModal(false)}>
+          <Modal
+            className="playlist-modal-container"
+            open={openModal}
+            onClose={() => setOpenModal(false)}
+          >
             <PlaylistsModal />
           </Modal>
         </div>

@@ -150,7 +150,11 @@ function Track() {
           <ion-icon name="play"></ion-icon>
         </span>
 
-        <Modal open={openModal} onClose={() => setOpenModal(false)}>
+        <Modal
+          className="track-modal-container"
+          open={openModal}
+          onClose={() => setOpenModal(false)}
+        >
           <TrackModal />
         </Modal>
       </div>

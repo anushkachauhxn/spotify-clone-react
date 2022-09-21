@@ -183,3 +183,9 @@
     }
   }
 }
+
+@media screen and (min-width: 540px) {
+  .track-modal-container {
+    display: none;
+  }
+}

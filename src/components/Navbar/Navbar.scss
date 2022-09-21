@@ -200,3 +200,9 @@
     }
   }
 }
+
+@media screen and (min-width: 540px) {
+  .playlist-modal-container {
+    display: none;
+  }
+}
